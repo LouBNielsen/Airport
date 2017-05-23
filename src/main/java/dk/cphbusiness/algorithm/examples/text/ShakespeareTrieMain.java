@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dk.cphbusiness.airport.template.text;
+package dk.cphbusiness.algorithm.examples.text;
 
 import dk.cphbusiness.algorithm.examples.utils.FileUtility;
 import java.io.IOException;
@@ -41,6 +41,13 @@ public class ShakespeareTrieMain {
             trie.put(word, word);
         }
         
-        trie.print(System.out);
+        ShakespeareTries tries = new ShakespeareTries();
+        for(String word : tempShakeSpeareWords){
+            tries.put(word, word);
+        }
+        
+        //trie.print(System.out);
+        
+        tries.print(System.out);
     }
 }
